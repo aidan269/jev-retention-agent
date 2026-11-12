@@ -1,10 +1,10 @@
-# Battery Retention Bot v1 🔋
+# Customer Retention Bot v1
 
 **Stack/ Systems Involved: Claude, [Jev](https://typesafe.ai/blog/introducing-system-one-models-and-jev), Python, HubSpot**
 
-One customer setback I saw in discussions was a lack of transparency around battery drainage during peak grid demand. I built this customer retention bot to help explain these events, flag customer concerns, and keep an engineer in the loop.
+I built this customer retention bot to help explain these events, flag customer concerns, and keep an engineer in the loop.
 
-The bot prepares one customer update when charge crosses 30% and another at 25%, per dispatch.
+The bot, modeled for a battery company, prepares one customer update when charge crosses 30% and another at 25%, per dispatch.
 
 ```text
 Battery reading arrives
