@@ -6,29 +6,7 @@ I built this customer retention bot to help explain these events, flag customer 
 
 The bot, modeled for a battery company, prepares one customer update when charge crosses 30% and another at 25%, per dispatch.
 
-```text
-Battery reading arrives
-          |
-          v
-Crossed 30% or 25% since the previous reading?
-          |
-          v
-Claude drafts a customer update
-          |
-          v
-Customer reply entered via CLI
-          |
-          v
-Jev assesses reply for escalation
-          |
-          +---- No escalation ----> Save assessment
-          |
-          v
-Escalation flagged
-          |
-          v
-Create HubSpot follow-up task
-```
+![Customer retention workflow: battery readings trigger customer updates at the 30% and 25% thresholds; Jev assesses replies and escalations become HubSpot tasks.](assets/battery-retention-flow.svg)
 
 Run `python3 demo.py` to see the sequence offline, or `python3 demo.py --live-claude` with Claude credentials. The first reading establishes a baseline. Skipped readings still count as crossings: 31% to 29% triggers the 30% update using the actual 29% reading. 
 
