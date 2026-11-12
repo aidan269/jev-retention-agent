@@ -1,6 +1,6 @@
 # Customer Retention Bot v1
 
-** I built this customer retention bot to help explain these events, flag customer concerns, and keep an engineer in the loop.**
+**I built this customer retention bot to help explain these events, flag customer concerns, and keep an engineer in the loop.**
 
 The bot, modeled for a battery company, prepares one customer update when charge crosses 30% and another at 25%, per dispatch.
 
